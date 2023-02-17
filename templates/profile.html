@@ -1,0 +1,22 @@
+{%extends 'base.html'%}
+
+{%block title%}
+profile
+{%endblock%}
+
+
+
+
+{%block container%}
+<h3>hello {{user}}</h3>
+<br>
+<form method="POST" enctype="multipart/form-data">
+    <input type="text" name="new_username" placeholder="you can change username">
+    <br>
+    <label for="avatar">you can change your avatar</label>
+    <input type="file" name="avatar">
+    <br>
+    <input type="submit" value="change">
+</form>
+
+{%endblock container%}

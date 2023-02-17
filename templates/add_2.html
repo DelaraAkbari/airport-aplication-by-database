@@ -1,0 +1,12 @@
+{%extends 'base.html'%}
+{%block container%}
+<form action="/add" method="POST">
+    <input class="text_input" type="text" name="flight_number" placeholder="flight number" required>
+    <br>
+    <br>
+    <input class="text_input" type="time" name="flight_time" placeholder="flight time" required>
+    <br>
+    <br>
+    <input class="add" type="submit"  value="set">
+</form>
+{%endblock%}

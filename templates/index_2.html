@@ -1,0 +1,24 @@
+{%extends 'base.html'%}
+
+{%block title%}
+home page
+{%endblock%}
+
+
+
+
+{%block container%}
+<br>
+<table class="table table-dark table-sm">
+  <tr>
+  <th>flight number</th>
+  <th>flight time</th>
+    </tr>
+  {%for i in range(items):%}
+  <tr>
+  <th>{{flight_number[i]}}</th>
+  <th>{{flight_time[i]}}</th>
+    </tr>
+  {%endfor%}
+</table>
+{%endblock container%}
